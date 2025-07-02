@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lava Rápido - Seu Carro Brilhando!</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #333;
+        }
+        .section-padding {
+            padding: 4rem 1rem;
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 2rem;
+            }
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .whatsapp-button {
+            background-color: #25D366; /* WhatsApp green */
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 9999px; /* Fully rounded */
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .whatsapp-button:hover {
+            background-color: #1DA851;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-blue-800 text-white py-4 shadow-lg">
+        <div class="container flex justify-between items-center px-4">
+            <h1 class="text-3xl font-bold text-blue-100">Lava Rápido 🚗✨</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#precos" class="hover:text-blue-200 transition duration-300">Preços</a></li>
+                    <li><a href="#agendamento" class="hover:text-blue-200 transition duration-300">Agendamento</a></li>
+                    <li><a href="#sobre" class="hover:text-blue-200 transition duration-300">Sobre Nós</a></li>
+                    <li><a href="#video" class="hover:text-blue-200 transition duration-300">Vídeo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-700 to-blue-900 text-white text-center section-padding">
+        <div class="container">
+            <h2 class="text-5xl font-extrabold mb-4 leading-tight">Seu Carro Merece o Melhor Brilho!</h2>
+            <p class="text-xl mb-8 opacity-90">Serviços de lavagem automotiva de alta qualidade para deixar seu veículo impecável.</p>
+            <a href="#agendamento" class="bg-yellow-400 text-blue-900 px-8 py-4 rounded-full text-lg font-bold hover:bg-yellow-300 transition duration-300 shadow-lg">
+                Agende Já!
+            </a>
+        </div>
+    </section>
+
+    <!-- Tabela de Preços Section -->
+    <section id="precos" class="section-padding bg-gray-50">
+        <div class="container text-center">
+            <h2 class="text-4xl font-bold text-blue-800 mb-12">Nossos Pacotes de Lavagem</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Pacote Básico -->
+                <div class="card flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-4">Pacote Básico</h3>
+                        <p class="text-gray-600 mb-6">Lavagem externa, secagem e limpeza de rodas.</p>
+                        <ul class="text-left text-gray-700 space-y-2 mb-6">
+                            <li>✨ Lavagem Externa</li>
+                            <li>💧 Secagem Manual</li>
+                            <li>🚗 Limpeza de Rodas</li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-4xl font-bold text-blue-900 mb-4">R$ 40,00</p>
+                        <a href="#agendamento" class="block bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300">Escolher Pacote</a>
+                    </div>
+                </div>
+
+                <!-- Pacote Completo -->
+                <div class="card flex flex-col justify-between border-4 border-blue-500">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-4">Pacote Completo <span class="text-sm bg-yellow-400 text-blue-900 px-2 py-1 rounded-full ml-2">Mais Popular!</span></h3>
+                        <p class="text-gray-600 mb-6">Lavagem completa, aspiração interna, limpeza de painel e vidros.</p>
+                        <ul class="text-left text-gray-700 space-y-2 mb-6">
+                            <li>✨ Lavagem Externa Premium</li>
+                            <li>💧 Secagem Detalhada</li>
+                            <li>🧹 Aspiração Interna</li>
+                            <li>🧽 Limpeza de Painel e Portas</li>
+                            <li>🪞 Limpeza de Vidros</li>
+                            <li>🚗 Limpeza de Rodas e Pneus</li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-4xl font-bold text-blue-900 mb-4">R$ 75,00</p>
+                        <a href="#agendamento" class="block bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300">Escolher Pacote</a>
+                    </div>
+                </div>
+
+                <!-- Pacote Premium -->
+                <div class="card flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-4">Pacote Premium</h3>
+                        <p class="text-gray-600 mb-6">Tudo do completo, mais enceramento e hidratação de plásticos.</p>
+                        <ul class="text-left text-gray-700 space-y-2 mb-6">
+                            <li>💎 Lavagem Premium Detalhada</li>
+                            <li>💧 Secagem com Toque Final</li>
+                            <li>🧹 Aspiração Profunda</li>
+                            <li>🧽 Limpeza e Condicionamento de Interiores</li>
+                            <li>🪞 Limpeza de Vidros e Espelhos</li>
+                            <li>🚗 Limpeza de Rodas, Pneus e Caixa de Roda</li>
+                            <li>✨ Enceramento de Brilho</li>
+                            <li>🧴 Hidratação de Plásticos e Borrachas</li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-4xl font-bold text-blue-900 mb-4">R$ 120,00</p>
+                        <a href="#agendamento" class="block bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300">Escolher Pacote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento Section -->
+    <section id="agendamento" class="section-padding bg-blue-700 text-white text-center">
+        <div class="container">
+            <h2 class="text-4xl font-bold mb-8">Agende Sua Lavagem Agora!</h2>
+            <p class="text-lg mb-8">Clique no botão abaixo para agendar seu horário diretamente pelo WhatsApp. É rápido e fácil!</p>
+            <a href="https://wa.me/5511963421674?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20lavagem%20para%20o%20meu%20carro." target="_blank" class="whatsapp-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.408 3.481 2.241 2.241 3.48 5.226 3.481 8.407 0 6.556-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.923 3.576 1.442 5.562 1.441 5.235 0 9.484-4.249 9.489-9.484 0-5.235-4.249-9.484-9.484-9.484-5.235 0-9.485 4.249-9.485 9.484 0 1.742.502 3.379 1.356 4.736l-.953 3.458 3.542-.929zm-4.133-4.113l-.953 3.458 3.542-.929c1.077.593 2.257.91 3.468.911 5.235 0 9.489-4.249 9.489-9.484 0-5.235-4.249-9.484-9.484-9.484-5.235 0-9.485 4.249-9.485 9.484 0 1.742.502 3.379 1.356 4.736l-.953 3.458 3.542-.929zM12 4.417c-4.13 0-7.483 3.354-7.483 7.484 0 4.13 3.353 7.483 7.483 7.483s7.483-3.353 7.483-7.483c0-4.13-3.353-7.484-7.483-7.484zm.001 1.501c3.298 0 5.98 2.682 5.98 5.981 0 3.298-2.682 5.98-5.98 5.98s-5.98-2.682-5.98-5.98c0-3.299 2.682-5.981 5.98-5.981zm-2.587 2.477c-.372 0-.673.301-.673.673s.301.673.673.673h.001c.372 0 .673-.301.673-.673s-.301-.673-.673-.673zm5.174 0c-.372 0-.673.301-.673.673s.301.673.673.673h.001c.372 0 .673-.301.673-.673s-.301-.673-.673-.673zm-2.587 2.477c-.372 0-.673.301-.673.673s.301.673.673.673h.001c.372 0 .673-.301.673-.673s-.301-.673-.673-.673zm-2.587 2.477c-.372 0-.673.301-.673.673s.301.673.673.673h.001c.372 0 .673-.301.673-.673s-.301-.673-.673-.673zm5.174 0c-.372 0-.673.301-.673.673s.301.673.673.673h.001c.372 0 .673-.301.673-.673s-.301-.673-.673-.673zm-2.587 2.477c-.372 0-.673.301-.673.673s.301.673.673.673h.001c.372 0 .673-.301.673-.673s-.301-.673-.673-.673z"/>
+                </svg>
+                Agendar pelo WhatsApp
+            </a>
+            <p class="text-sm mt-4 opacity-80">Nosso horário de atendimento: Segunda a Sábado, das 8h às 18h.</p>
+        </div>
+    </section>
+
+    <!-- Sobre a Empresa Section -->
+    <section id="sobre" class="section-padding bg-white">
+        <div class="container flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+                <h2 class="text-4xl font-bold text-blue-800 mb-6">Sobre Nós</h2>
+                <p class="text-lg text-gray-700 mb-4">
+                    Bem-vindo ao <strong>Lava Rápido Brilhante</strong>! Somos apaixonados por carros e dedicados a oferecer os melhores serviços de lavagem automotiva da região. Com anos de experiência, nossa equipe é treinada para cuidar do seu veículo com o máximo de atenção e profissionalismo.
+                </p>
+                <p class="text-lg text-gray-700 mb-4">
+                    Utilizamos apenas produtos de alta qualidade e técnicas avançadas para garantir que seu carro não apenas fique limpo, mas também protegido e com um brilho duradouro. Nosso compromisso é com a satisfação total do cliente, proporcionando uma experiência de lavagem rápida, eficiente e com resultados impecáveis.
+                </p>
+                <p class="text-lg text-gray-700">
+                    Venha nos visitar e descubra por que somos a escolha número um para o cuidado do seu carro!
+                </p>
+            </div>
+            <div class="lg:w-1/2 flex justify-center">
+                <!-- Placeholder Image for About Us -->
+                <img src="https://placehold.co/600x400/ADD8E6/000000?text=Nossa+Equipe" alt="Imagem da equipe do lava rápido" class="rounded-2xl shadow-xl w-full max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Vídeo da Empresa Section -->
+    <section id="video" class="section-padding bg-gray-50">
+        <div class="container text-center">
+            <h2 class="text-4xl font-bold text-blue-800 mb-12">Conheça Nosso Trabalho</h2>
+            <div class="relative w-full max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl" style="padding-bottom: 56.25%;">
+                <!-- 16:9 Aspect Ratio -->
+                <iframe
+                    class="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=Rj3Qx_2X0XhWz_1Q"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p class="text-gray-600 mt-8 text-lg">Assista ao nosso vídeo para ver como cuidamos do seu veículo com carinho e expertise.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container text-center">
+            <p>&copy; 2025 Lava Rápido Brilhante. Todos os direitos reservados.</p>
+            <p class="mt-2">Endereço: Rua do Brilho, 123 - Cidade Limpa - SP</p>
+            <p>Telefone: (11) 99999-9999 | Email: contato@lavarapidobrilhante.com.br</p>
+        </div>
+    </footer>
+
+</body>
+</html>
